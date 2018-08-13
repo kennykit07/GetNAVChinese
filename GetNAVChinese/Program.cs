@@ -29,7 +29,7 @@ namespace GetNAVChinese
             {
                 sqlcon.Open();
                 //sqlstr = "SELECT * FROM [Celki_Dev2].[dbo].[Celki International Limited$Customer]  where upper([No_]) = upper('JB112121')";
-                sqlstr = "SELECT * FROM [Celki_Dev2].[dbo].[Celki International Limited$Customer]  where upper([No_]) in ('JB030642', 'JB030644')";
+                sqlstr = "SELECT * FROM [Celki_Dev2].[dbo].[Celki International Limited$Customer]  where upper([No_]) in ('JB030642', 'JB030644', 'AHNH')";
                 sqlcmd = new SqlCommand(sqlstr, sqlcon);
                 dr = sqlcmd.ExecuteReader();
                 while (dr.Read())
